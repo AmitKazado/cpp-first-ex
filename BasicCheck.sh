@@ -26,7 +26,7 @@ valgrindOut=$?
 if [ $valgrindOut -eq 0 ]; then
 valgrindOutput="pass"
 
-elif [ valgrindOut -ne 0 ]; then
+elif [ $valgrindOut -ne 0 ]; then
 	((exitCode+=2))
 fi
 
